@@ -5,7 +5,7 @@ import re
 import csv
 
 '''
-This script sort through lists in a given directory and output into a single text file used for easy importing.
+This script sorts through lists in a given directory and output into a single text file used for easy importing.
 '''
 
 regex = re.compile((r"([a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`"
