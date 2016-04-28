@@ -33,11 +33,11 @@ for e in w:
 		cursor.execute("INSERT INTO email(email) VALUES(%s)", (e))
 		db.commit()
 		success += 1
-		print e + "Successfully added to database."
+		print e + " was successfully added to database."
 	except:
 		db.rollback()
 		failed += 1
-		print e + "Failed to be added to database."
+		print e + " has failed to be added to database."
 
 
 db.close()
