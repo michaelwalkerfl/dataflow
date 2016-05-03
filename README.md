@@ -1,5 +1,5 @@
 # dataflow
-A variety of python utilities for your email data management needs.
+A collection of python utilities for your email data management needs.
 
 - Send your email list to MySQL database.
 - Parse all emails from files within a given directory.
