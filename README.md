@@ -6,3 +6,4 @@ A collection of python utilities for your email data management needs.
 - Randomize your email list.
 - Remove duplicate emails from within a given list.
 - Split large email lists for easier management.
+- Combine multiple lists into one.
