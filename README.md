@@ -5,3 +5,4 @@ A variety of python utilities for your email data management needs.
 - Parse all emails from files within a given directory.
 - Randomize your email list.
 - Remove duplicate emails from within a given list.
+- Split large email lists for easier management.
