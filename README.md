@@ -7,3 +7,4 @@ A collection of python utilities for your email data management needs.
 - Remove duplicate emails from within a given list.
 - Split large email lists for easier management.
 - Combine multiple lists into one.
+- Remove emails from list if contained on another list.
