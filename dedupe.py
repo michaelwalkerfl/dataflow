@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-Python is not a good solution for splitting larger files, awk is much faster.
+Python is not a good solution for deduping larger files, awk is much faster.
 awk '!x[$0]++' /path/to/file > /path/to/deduped_file
 '''
 
