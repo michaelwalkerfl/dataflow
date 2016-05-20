@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import pymysql
 from sys import argv
-
+from pync import Notifier
 
 '''
 Create your MySQL table with this command:
@@ -41,5 +41,6 @@ for e in w:
 
 
 db.close()
+Notifier.notify('Your import is complete.', title='Python email list importer')
 print 'There were %s emails successfully added to the database.' % success
 print 'There were %s emails that failed to be added to the database.' % failed
