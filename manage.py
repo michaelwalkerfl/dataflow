@@ -28,4 +28,6 @@ def main():
 
     parse_parser = subparsers.add_parser('parse', help='parse emails from directory of lists')
 
+    randomize_parser = subparsers.add_parser('randomize', help='randomize list')
+    randomize_parser.add_argument('--list', help='list to randomize')
 
