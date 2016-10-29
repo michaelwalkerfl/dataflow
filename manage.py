@@ -4,6 +4,7 @@ def main():
     import argparse
     from database.send_to_database import send_to_db
     from dedupe.dedupe import dedupe
+    from join.join import join
 
     parser = argparse.ArgumentParser()
 
@@ -18,6 +19,10 @@ def main():
     send_to_db_parser.add_argument('--database', help='database name')
 
     dedupe_parser = subparsers.add_parser('dedupe', help='dedupe list')
-    dedupe_parser.add_argument('list', help='list to dedupe')
+    dedupe_parser.add_argument('--list', help='list to dedupe')
+
+    join_parser = subparsers.add_parser('join', help='join lists')
+    join_parser.add_argument('--dir', help='directory of lists to join')
+    join_parser.add_argument('--type', help='file types "csv" or "txt"')
 
 
