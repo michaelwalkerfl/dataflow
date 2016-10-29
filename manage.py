@@ -8,6 +8,7 @@ def main():
     from parse.parse import parse
     from randomize.randomize import randomize
     from scrub.scrub import scrub
+    from split.split import split
 
     parser = argparse.ArgumentParser()
 
@@ -37,3 +38,5 @@ def main():
     scrub_parser.add_argument('--emails', help='list of emails to clean')
     scrub_parser.add_argument('--blacklist', help='list of emails to remove from list')
 
+    split_parser = subparsers.add_parser('split', help='split list')
+    split_parser.add_argument('--file', help='file to split')
