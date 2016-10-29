@@ -12,8 +12,13 @@ A collection of python utilities for your email data management needs.
 # Usage:
 `./manage.py send_to_db --host=localhost --user=dbuser --port=3306
 --password=dbpassword --db=dbname`
+
 `./manage.py dedupe --list=file.txt`
+
 `./manage.py join --dir=/downloads/email/ --type=csv`
+
 `./manage.py randomize --list=file.txt`
+
 `./manage.py scrub --emails=emails.txt --blacklist=blacklist.txt`
+
 `./manage.py split --file=email_list.csv`
