@@ -5,6 +5,7 @@ def main():
     from database.send_to_database import send_to_db
     from dedupe.dedupe import dedupe
     from join.join import join
+    from parse.parse import parse
 
     parser = argparse.ArgumentParser()
 
@@ -24,5 +25,7 @@ def main():
     join_parser = subparsers.add_parser('join', help='join lists')
     join_parser.add_argument('--dir', help='directory of lists to join')
     join_parser.add_argument('--type', help='file types "csv" or "txt"')
+
+    parse_parser = subparsers.add_parser('parse', help='parse emails from directory of lists')
 
 
