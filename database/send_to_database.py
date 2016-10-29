@@ -28,7 +28,7 @@ def send_to_db(args):
     database = args.database
 
     # Establish connection to local MySQL database
-    db = pymysql.connect(host=host, port=port, user=user, passwd=password, db=database)
+    db = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=database)
 
     cursor = db.cursor()
 
