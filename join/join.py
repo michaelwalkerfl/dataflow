@@ -14,6 +14,8 @@ def join(args):
             for line in open( file_, 'r' ):
                 result.write( line )
 
+    return join
+
 
 if __name__ == '__main__':
     main()

@@ -8,6 +8,8 @@ def split(args):
     with open(file_to_split, 'r') as f:
         csv_splitter.split(f);
 
+    return split
+
 
 if __name__ == '__main__':
     main()

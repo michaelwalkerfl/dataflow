@@ -34,6 +34,7 @@ def parse():
 
     file1.close()
     n.close()
+    return parse
 
 
 if __name__ == '__main__':

@@ -51,6 +51,7 @@ def send_to_db(args):
 
 
     db.close()
+    return send_to_db
     Notifier.notify('Your import is complete.', title='Python email list importer')
     print 'There were %s emails successfully added to the database.' % success
     print 'There were %s emails that failed to be added to the database.' % failed

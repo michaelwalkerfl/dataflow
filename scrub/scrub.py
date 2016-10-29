@@ -19,6 +19,8 @@ def scrub(args):
                 good.write(email + '\n')
                 print email, "is Good"
 
+    return scrub
+
 
 if __name__ == '__main__':
     main()
