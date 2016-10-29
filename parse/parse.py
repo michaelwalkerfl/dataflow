@@ -22,15 +22,15 @@ def parse():
     for filename in dircontent:
         print filename
         file1 = open(d + filename)
-            for line in file1:
-                email = re.findall(regex, line)
-                with open('emailsonly.txt', 'a') as n:
-                    email = str(email).replace("[('", "")
-                    email = str(email).replace("', '@', '.')]", "")
-                    email = str(email).replace("', '@', '.'), (", "")
-                    email = str(email).replace("'", "\n")
-                    if email != '[]':
-                        n.write(email + '\n')
+        for line in file1:
+            email = re.findall(regex, line)
+            with open('emailsonly.txt', 'a') as n:
+                email = str(email).replace("[('", "")
+                email = str(email).replace("', '@', '.')]", "")
+                email = str(email).replace("', '@', '.'), (", "")
+                email = str(email).replace("'", "\n")
+                if email != '[]':
+                    n.write(email + '\n')
 
     file1.close()
     n.close()
