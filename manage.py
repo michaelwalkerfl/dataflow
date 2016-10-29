@@ -6,6 +6,8 @@ def main():
     from dedupe.dedupe import dedupe
     from join.join import join
     from parse.parse import parse
+    from randomize.randomize import randomize
+    from scrub.scrub import scrub
 
     parser = argparse.ArgumentParser()
 
@@ -30,4 +32,8 @@ def main():
 
     randomize_parser = subparsers.add_parser('randomize', help='randomize list')
     randomize_parser.add_argument('--list', help='list to randomize')
+
+    scrub_parser = subparsers.add_parser('scrub', help='scrub list against list')
+    scrub_parser.add_argument('--emails', help='list of emails to clean')
+    scrub_parser.add_argument('--blacklist', help='list of emails to remove from list')
 
