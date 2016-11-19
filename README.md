@@ -11,7 +11,7 @@ A collection of python utilities for your email data management needs.
 
 # Usage:
 `./manage.py send_to_db --host=localhost --user=dbuser --port=3306
---password=dbpassword --db=dbname`
+--password=dbpassword --db=dbname --file=file_to_send.txt`
 
 `./manage.py dedupe --list=file.txt`
 
