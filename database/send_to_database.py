@@ -26,13 +26,14 @@ def send_to_db(args):
         port = 3306
     passwd = args.password
     database = args.database
+    file_to_send = args.file
 
     # Establish connection to local MySQL database
     db = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=database)
 
     cursor = db.cursor()
 
-    s = str(file('%s' % argv[1]).read())
+    s = str(file(file_to_send).read())
     w = s.split('\n')
 
     success = 0

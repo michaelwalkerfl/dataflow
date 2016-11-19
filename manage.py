@@ -23,6 +23,7 @@ def main():
     send_to_db_parser.add_argument('--port', help='database port')
     send_to_db_parser.add_argument('--password', help='database password')
     send_to_db_parser.add_argument('--database', help='database name')
+    send_to_db_parser.add_argument('--file', help='file to send')
     send_to_db_parser.set_defaults(command=send_to_db)
 
     dedupe_parser = subparsers.add_parser('dedupe', help='dedupe list')
