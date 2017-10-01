@@ -36,6 +36,7 @@ def main():
     join_parser.set_defaults(command=join)
 
     parse_parser = subparsers.add_parser('parse', help='parse emails from directory of lists')
+    parse_parser.add_argument('--dir', help='directory of lists to extract emails from.')
     parse_parser.set_defaults(command=parse)
 
     randomize_parser = subparsers.add_parser('randomize', help='randomize list')

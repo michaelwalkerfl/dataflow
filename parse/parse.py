@@ -4,7 +4,7 @@ import os, subprocess
 import re
 import csv
 
-def parse():
+def parse(args):
     '''
     This script sorts through lists in a given directory and output into a single text file used for easy importing.
     '''
@@ -16,8 +16,8 @@ def parse():
 
     #regex = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
 
-    d = raw_input('What directory would you like to parse emails from?')
-
+    #d = raw_input('What directory would you like to parse emails from?')
+    d = args.dir
     dircontent = os.listdir(d)
     for filename in dircontent:
         print filename
